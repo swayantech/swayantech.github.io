@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayan Tech - Business & Software Solutions</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Sleek Tech Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            /* Futuristic dark background with subtle radial glow */
+            background: #000000;
+            background-image: radial-gradient(circle at 50% 10%, rgba(102, 252, 241, 0.05) 0%, transparent 60%);
+            color: #c5c6c7;
+            font-family: 'Manrope', sans-serif;
+            transition: background 0.5s ease-in-out;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* New font for headings for a sleek, futuristic look */
+        h1, h2, h3, h4 {
+            font-family: 'Exo 2', sans-serif;
+        }
+        .text-accent {
+            color: #66fcf1;
+        }
+        .bg-accent {
+            background-color: #66fcf1;
+        }
+        .border-accent {
+            border-color: #66fcf1;
+        }
+        .shadow-accent {
+            box-shadow: 0 0 10px rgba(102, 252, 241, 0.4);
+        }
+        .button-glow:hover {
+            box-shadow: 0 0 15px rgba(102, 252, 241, 0.6);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 252, 241, 0.15);
+            border-color: #66fcf1;
+        }
+        /* Carousel specific styles */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-track .venture-card {
+            width: 100% ; 
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="py-6 border-b border-gray-800">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-white tracking-wide">Swayan Tech</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#services" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a>
+                <a href="#community" class="text-gray-400 hover:text-white transition-colors duration-300">Community</a>
+                <a href="#ventures" class="text-gray-400 hover:text-white transition-colors duration-300">Ventures</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-32 text-center">
+            <div class="container mx-auto px-4">
+                <p class="text-lg md:text-xl text-accent font-medium mb-3">Welcome to Swayan Tech</p>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">Empowering businesses to build great software and stronger teams.</h2>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    Based in Nashik, Maharashtra, we offer comprehensive business and software design consulting to tech companies.
+                </p>
+                <a href="#contact" class="inline-block bg-accent text-gray-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-accent transition-all duration-300 button-glow">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Our Services</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service 1: Software Development Advice & System Design -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 transition-all duration-300 shadow-lg card-hover">
+                        <i class="fas fa-laptop-code text-3xl text-accent mb-4"></i>
+                        <h4 class="text-xl font-semibold text-white mb-2">Software Development</h4>
+                        <p class="text-gray-400">We craft solutions for your unique challenges and provide expert architectural guidance.</p>
+                    </div>
+                    <!-- Service 2: Team Building -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 transition-all duration-300 shadow-lg card-hover">
+                        <i class="fas fa-users-cog text-3xl text-accent mb-4"></i>
+                        <h4 class="text-xl font-semibold text-white mb-2">Team Building</h4>
+                        <p class="text-gray-400">We guide you in forming and scaling your in-house development and product teams.</p>
+                    </div>
+                    <!-- Service 3: PDLC & SDLC -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 transition-all duration-300 shadow-lg card-hover">
+                        <i class="fas fa-cogs text-3xl text-accent mb-4"></i>
+                        <h4 class="text-xl font-semibold text-white mb-2">PDLC & SDLC</h4>
+                        <p class="text-gray-400">We set up end-to-end Product Development Lifecycle and Software Development Lifecycle processes.</p>
+                    </div>
+                    <!-- Service 4: IT Security & ISMS Design -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 transition-all duration-300 shadow-lg card-hover">
+                        <i class="fas fa-shield-alt text-3xl text-accent mb-4"></i>
+                        <h4 class="text-xl font-semibold text-white mb-2">IT Security & ISMS Design</h4>
+                        <p class="text-gray-400">We prepare businesses for compliance with standards such as NIST, ISO, and SOC 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Our Community</h3>
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-8">
+                    Beyond our consulting work, we are an "umbrella" company dedicated to fostering innovation and supporting new startups. We are a bootstrapped community built to help entrepreneurs solve problems, secure customers, and find guidance. We're a hub for like-minded entrepreneurs who want to build and grow together. Our mission is to improve employment in India by solving problems.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 items-start text-left">
+                    <!-- Community Members -->
+                    <div class="bg-gray-900 p-8 rounded-lg border border-gray-800 h-full">
+                        <h4 class="text-xl font-semibold text-white mb-4">Current Members</h4>
+                        <p class="text-gray-400">Our community includes over 10 entrepreneurs across several companies:</p>
+                        <ul class="text-gray-400 space-y-2 mt-4">
+                            <li><span class="text-accent font-semibold">1</span> company in Marketing, Digital Marketing</li>
+                            <li><span class="text-accent font-semibold">2</span> Sales Partners for SaaS Sales across globe</li>
+                            <li><span class="text-accent font-semibold">2</span> AI Product SaaS companies</li>
+                            <li><span class="text-accent font-semibold">3</span> Design companies for product and content design</li>
+                            <li><span class="text-accent font-semibold">2</span> Development companies</li>
+                        </ul>
+                        <p class="text-2xl font-bold text-accent mt-6">You could be next.</p>
+                    </div>
+
+                    <!-- Learning & Upskilling -->
+                    <div class="bg-gray-900 p-8 rounded-lg border border-gray-800 h-full">
+                        <h4 class="text-xl font-semibold text-white mb-4">Upskilling for the Future</h4>
+                        <p class="text-gray-400">
+                            We act as a learning provider for aspiring software engineers, product managers, and leaders. We offer guidance and education without the noise, helping you upskill and advance your career.
+                        </p>
+                        <p class="text-gray-400 mt-4">
+                            Upon completion, we will enlist trained and pre-interviewed individuals on our website. This list acts as a certification of one round of experience, giving you an edge for further employment opportunities within our ecosystem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventures Section - Updated to a Carousel -->
+        <section id="ventures" class="py-16 md:py-24 bg-gray-900">
+            <div class="container mx-auto px-4 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Our Ventures</h3>
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-8">We are actively building new ventures to solve real-world problems. Here are some of our promising ideas in the works.</p>
+
+                <div class="relative w-full max-w-4xl mx-auto">
+                    <div class="carousel-container">
+                        <div id="carousel-track" class="carousel-track">
+                            <!-- Venture 1: Audio Translation SaaS -->
+                            <div class="venture-card bg-gray-800 p-8 rounded-lg border border-gray-700 text-left">
+                                <h4 class="text-2xl font-bold text-white mb-4">Audio Translation SaaS for Planetariums & Public Events</h4>
+                                <p class="text-gray-400 mb-6">
+                                    This is a SaaS platform that provides real-time audio translation for live presentations. It breaks down language barriers for diverse audiences in public venues like planetariums, museums, and conference halls.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div>
+                                        <h5 class="text-xl font-semibold text-accent mb-2">Problem Solved</h5>
+                                        <p class="text-gray-400">
+                                            Content is often delivered in a single language, limiting engagement for tourists and non-native speakers. Existing solutions are expensive and inflexible.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-xl font-semibold text-accent mb-2">Our Solution</h5>
+                                        <p class="text-gray-400">
+                                            A cloud-based platform that captures live audio and broadcasts real-time translations to a user's mobile device via a simple app.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Venture 2: Micro CRM -->
+                            <div class="venture-card bg-gray-800 p-8 rounded-lg border border-gray-700 text-left">
+                                <h4 class="text-2xl font-bold text-white mb-4">Micro CRM for Community Businesses</h4>
+                                <p class="text-gray-400 mb-6">
+                                    This micro-SaaS product is designed to help small, local businesses in neighborhoods manage customer relationships, bookings, and communication effectively.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div>
+                                        <h5 class="text-xl font-semibold text-accent mb-2">Problem Solved</h5>
+                                        <p class="text-gray-400">
+                                            Traditional CRM software is often too complex and expensive for small businesses. They need a simple, intuitive, and affordable tool.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-xl font-semibold text-accent mb-2">Our Solution</h5>
+                                        <p class="text-gray-400">
+                                            A lightweight, user-friendly CRM with essential features like contact management, appointment scheduling, and automated reminders, tailored for local service providers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <div class="flex justify-between items-center mt-6 px-4 md:px-0">
+                        <button id="prev-btn" class="text-accent hover:text-white transition-colors duration-300 focus:outline-none disabled:text-gray-600 disabled:cursor-not-allowed">
+                            <i class="fas fa-chevron-left text-2xl"></i>
+                        </button>
+                        <div id="carousel-dots" class="flex space-x-2">
+                            <span class="w-2 h-2 rounded-full bg-accent"></span>
+                            <span class="w-2 h-2 rounded-full bg-gray-600"></span>
+                        </div>
+                        <button id="next-btn" class="text-accent hover:text-white transition-colors duration-300 focus:outline-none disabled:text-gray-600 disabled:cursor-not-allowed">
+                            <i class="fas fa-chevron-right text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl md:text-4xl font-bold text-white text-center mb-6">Our Vision</h3>
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto text-center">
+                    In the near future, we plan to expand our mission by offering non-profit training to empower the next generation of Indian youth. Our programs will cover essential skills like programming, development, systems architecture, and technical product management.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-900">
+            <div class="container mx-auto px-4 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Contact Us</h3>
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-8">
+                    Whether you want to hire us, join our team, seek advice, or become part of our community, we're ready to connect.
+                </p>
+                <div class="bg-gray-800 p-8 rounded-lg inline-block border border-gray-700">
+                    <p class="text-xl font-semibold text-white mb-4">
+                        <i class="fas fa-envelope text-accent mr-3"></i>
+                        <a href="mailto:swayantech@gmail.com" class="hover:underline">swayantech@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-sm text-gray-500 border-t border-gray-800">
+        <p>&copy; 2023 Swaayan Tantradnyan | Swayan Tech. All rights reserved.</p>
+        <p>Est: 2023, Nashik, Maharashtra, India</p>
+    </footer>
+
+    <!-- Carousel JavaScript -->
+    <script>
+        const carouselTrack = document.getElementById('carousel-track');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const dotsContainer = document.getElementById('carousel-dots');
+        const ventureCards = document.querySelectorAll('.venture-card');
+        
+        let currentIndex = 0;
+        const totalSlides = ventureCards.length; // Number of total slides
+        
+        // Function to update the carousel position and state
+        function updateCarousel() {
+            carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots();
+            updateButtons();
+        }
+
+        // Function to update the navigation dots
+        function updateDots() {
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('span');
+                dot.className = `w-2 h-2 rounded-full mx-1`;
+                dot.style.backgroundColor = i === currentIndex ? '#66fcf1' : '#4b5563';
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        // Function to enable/disable buttons
+        function updateButtons() {
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === totalSlides - 1;
+        }
+
+        // Event listeners for carousel buttons
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        // Initialize carousel on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCarousel();
+        });
+    </script>
+</body>
+</html>
